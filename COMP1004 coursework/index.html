@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Page Title</title>
+   <link rel="stylesheet" href="CSS/styles.css"
+</head>
+<body>
+   <div>
+      <center>
+<h1>Climate Change</h1>
+ <h2> What is climate change?</h2>
+    <p>Climate change refers to long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun’s activity or large volcanic eruptions. But since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas.
+     Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the sun’s heat and raising temperatures.
+    <p>The main greenhouse gases that are causing climate change include carbon dioxide and methane. These come from using gasoline for driving a car or coal for heating a building, for example. Clearing land and cutting down forests can also release carbon dioxide. Agriculture, oil and gas operations are major sources of methane emissions. Energy, industry, transport, buildings, agriculture and land use are among the main sectors causing greenhouse gases.</p>  <! -- Information taken from https://www.un.org/en/climatechange/what-is-climate-change -->
+    <img src="https://www.imf.org/-/media/Images/IMF/Blog/Migrated/BLOG1024x600PolarBearonShrinkingIceSvenErikArndtUniversalImagesGroupNewscomuigphotos235623jpguigphot.ashx"
+    width="400"
+    length="400"/>
+<h2> How imminent is the current situation regarding climate change? </h2>
+<p>Global climate change is not a future problem. Changes to Earth’s climate driven by increased human emissions of heat-trapping greenhouse gases are already having widespread effects on the environment: glaciers and ice sheets are shrinking, river and lake ice is breaking up earlier, plant and animal geographic ranges are shifting, and plants and trees are blooming sooner.
+Effects that scientists had long predicted would result from global climate change are now occurring, such as sea ice loss, accelerated sea level rise, and longer, more intense heat waves.
+<img src="images/climate-change-concept-collage.jpg"
+    width="400"
+    length="400"/>
+
+    <h2> But can one be sure it is actually a real phenomenen</h2>
+      <p> Scientists demonstrated the heat-trapping nature of carbon dioxide and other gases in the mid-19th century.2 Many of the science instruments NASA uses to study our climate focus on how these gases affect the movement of infrared radiation through the atmosphere. From the measured impacts of increases in these gases, there is no question that increased greenhouse gas levels warm Earth in response.</p>
+<h2> What can one do about climate change? </h2>
+<h3>Save energy at home</h3>
+<p> Much of our electricity and heat are powered by coal, oil and gas. Use less energy by reducing your heating and cooling use, switching to LED light bulbs and energy-efficient electric appliances, washing your laundry with cold water, or hanging things to dry instead of using a dryer. Improving your home’s energy efficiency, through better insulation for instance, or replacing your oil or gas furnace with an electric heat pump can reduce your carbon footprint by up to 900 kilograms of CO2e per year. Get more energy tips for your home here.</p>
+<h3>Change your home's source of energy</h3>
+<p>Ask your utility company if your home energy comes from oil, coal or gas. If possible, see if you can switch to renewable sources such as wind or solar. Or install solar panels on your roof to generate energy for your home. Switching your home from oil, gas or coal-powered energy to renewable sources of energy, such as wind or solar, can reduce your carbon footprint by up to 1.5 tons of CO2e per year. Learn more about why switching to renewable energy is key to tackling the climate crisis.</p>
+<h3>Walk, bike or take public transport</h3>
+<p>The world’s roadways are clogged with vehicles, most of them burning diesel or gasoline. Walking or riding a bike instead of driving will reduce greenhouse gas emissions -- and help your health and fitness. For longer distances, consider taking a train or bus. And carpool whenever possible. Living car-free can reduce your carbon footprint by up to 2 tons of CO2 per year compared to a lifestyle using a car. Learn more about how to green your travel.</p>
+<img src="images/earth-216834_1280.jpg"
+    width="400"
+    length="400"/>
+   </p>
+   <p> Feel free to enter what country you're in and it's temperature in celsius!</p>
+   <label>Coutry Name:<label>
+      <input id="country" type="text">
+      <br>
+      <label>Temperature (celsius):<label>
+      <input id="temperature" type="text">
+      <br>
+      <button id="btnAddItem">Add</button>
+      <table id="Table">
+      </table>
+      <p id="jsontext"></p>
+      <p id = "averageTemp"></p>
+</center>
+</div>
+
+<script>
+  var countryName = document.getElementById("country")
+var temperatureName = document.getElementById("temperature")
+var jsonBtn = document.getElementById("jsonbtn")
+var jsonText = document.getElementById("jsontext")
+
+    var nationName = {
+        "country":country.value,
+    }
+    var temperatureValue = {
+      "temperature": temperature.value,
+    }
+    const myJSON = JSON.stringify(temperatureValue)
+    
+  
+const table = document.getElementById('Table');
+let numItems = 1;
+document.getElementById("btnAddItem").addEventListener("click", function () {
+    numItems++;
+    const row = document.createElement('tr');
+    row.innerHTML = `
+  <td id ="tableField">
+  </td>
+  <td>
+  <input type="text" id="itemValue${numItems}" placeholder="Value" />
+  </td>`
+  // You could also do the same for the cells and inputs
+    table.appendChild(row);
+    tableField.innerHTML = JSON.stringify(myJSON)
+
+});
+ // Website used = https://www.educative.io/answers/how-to-save-user-input-to-json-object-in-html
+ </script>
+ <table id="Table">
+</table>
+</body>
+</html>
