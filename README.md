@@ -1,1 +1,2 @@
 # COMP1004-coursework
+Climate change is a huge and urgent issue, one that requires a collective response to fight against. Although in this time, there are a lot of people aware of climate change and how big of an issue it is, there are still others through one situation or another, haven't been exposed to the reality of what it is. With this in view, I made this project as a way of hopefully educating people about climate change through a mixture of text and pictures, whilst also providing opportunities for interactivity.
