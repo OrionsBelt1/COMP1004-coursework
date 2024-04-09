@@ -1,0 +1,21 @@
+div {
+  background-color: rgb(255, 0, 0);
+  border: 1px solid black;
+  height: 2500px;
+  width: 1500px;
+}
+p {
+  width: 1000px;
+  margin: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+h1 {
+  color: blue;
+}
